@@ -15,7 +15,9 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ECKMO_ROOT = os.path.join(BASE_DIR, 'eckmo')
-CHATBOT_ROOT = os.path.join(ECKMO_ROOT, 'chatbot')
+BACKEND_ROOT = os.path.join(BASE_DIR, 'backend')
+FRONTEND_ROOT = os.path.join(BASE_DIR, 'frontend')
+CHATBOT_ROOT = os.path.join(BACKEND_ROOT, 'chatbot')
 
 
 # Quick-start development settings - unsuitable for production
@@ -40,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'backend',
+    'frontend'
 ]
 
 MIDDLEWARE = [

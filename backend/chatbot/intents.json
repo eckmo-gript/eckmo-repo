@@ -1,0 +1,231 @@
+{
+        "intents": [
+                {
+                        "tag": "greeting",
+                        "patterns": [
+                                "Hi there",
+                                "How are you",
+                                "Is anyone there?",
+                                "Hey",
+                                "yo",
+                                "Hola",
+                                "Hello",
+                                "Good day"
+                        ],
+                        "responses": [
+                                "Hello, thanks for asking",
+                                "Good to see you again",
+                                "Hi there, how can I help?"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "goodbye",
+                        "patterns": [
+                                "Bye",
+                                "See you later",
+                                "Goodbye",
+                                "Nice chatting to you, bye",
+                                "Till next time"
+                        ],
+                        "responses": [
+                                "See you!",
+                                "Have a nice day",
+                                "Bye! Come back again soon."
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "thanks",
+                        "patterns": [
+                                "Thanks",
+                                "Thank you",
+                                "That's helpful",
+                                "Awesome, thanks",
+                                "good call",
+                                "That's right",
+                                "Thanks for helping me",
+                                "Appreciate it",
+                                "Thank you very much",
+                                "I appreciate it",
+                                "Thanks a lot",
+                                "Thank you so much",
+                                "Thanks for the help",
+                                "Thank you for the help",
+                                "I appreciate your help",
+                                "Many thanks",
+                                "You have my gratitude",
+                                "Thanks for everything",
+                                "Thanks a ton",
+                                "I thank you",
+                                "I'm thankful",
+                                "Accept my gratitude",
+                                "I can't thank you enough",
+                                "How can I show you how grateful I am?",
+                                "Thank you for helping me",
+                                "Please accept my deepest thank",
+                                "I cannot express my appreciation",
+                                "I humbly thank you",
+                                "I'll forever be grateful",
+                                "All I can say is thanks!",
+                                "thnx for your time",
+                                "thnx for answering my questions",
+                                "thnx for the help",
+                                "thnx a lot",
+                                "thnx"
+                        ],
+                        "responses": [
+                                "Happy to help!",
+                                "Any time!",
+                                "My pleasure"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "noanswer",
+                        "patterns": [],
+                        "responses": [
+                                "Sorry, can't understand you",
+                                "Please give me more info",
+                                "Not sure I understand"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "options",
+                        "patterns": [
+                                "How you could help me?",
+                                "What you can do?",
+                                "What help you provide?",
+                                "How you can be helpful?",
+                                "What support is offered"
+                        ],
+                        "responses": [
+                                "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
+                                "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "bot_info",
+                        "patterns": [
+                                "How to check Adverse drug reaction?",
+                                "Open adverse drugs module",
+                                "Give me a list of drugs causing adverse behavior",
+                                "List all drugs suitable for patient with adverse reaction",
+                                "Which drugs dont have adverse reaction?"
+                        ],
+                        "responses": [
+                                "Navigating to Adverse drug reaction module"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "quote",
+                        "patterns": [
+                                "tell me a quote?",
+                                "Quote",
+                                "Inspirational Quote",
+                                "Quote of the day",
+                                "Any Quotes"
+                        ],
+                        "responses": [
+                                "Searching for a quote"
+                        ],
+                        "context": [
+                                ""
+                        ]
+                },
+                {
+                        "tag": "weather",
+                        "patterns": [
+                                "Will it be sunny today?",
+                                "Is it raining in Queens?",
+                                "What is the weather like this time of the year?",
+                                "Is it sunny",
+                                "Could we possibly have a hailstorm today?",
+                                "Will we have snow today?",
+                                "Will there be snowfall by tomorrow?",
+                                "How much rainfall have we had today?",
+                                "What is the temperature outside?",
+                                "How hot is it in Bangalore today?",
+                                "Will it be cloudy next Tuesday?",
+                                "Could you tell me what the weather is like right now?",
+                                "Will tomorrow be a balmy day?",
+                                "What will Sunday's weather be like?",
+                                "Is today going to be a wet day?",
+                                "Was yesterday a cloudy day?",
+                                "Will tomorrow be a sunny day?",
+                                "WHat's the weather like ?",
+                                "Should I carry an umbrella today?",
+                                "Is it good day to have a picnic?",
+                                "Should I send the kids out to play this evening?",
+                                "It's so hot today. Think it'll rain?",
+                                "We're considering an outdoor wedding. Any chances of rain?",
+                                "Shall we hold the lunch outdoors, or would it be too hot out?",
+                                "Should I wear a sweater to school today?",
+                                "Is it warm enough to go out for a walk?",
+                                "Is it too cold to go out for a swim?",
+                                "Is it cold enough to go ice skating at the lake yet?",
+                                "What is the temperature ?",
+                                "Will there be a storm tonight",
+                                "Dark clouds loom. Will it rain today?",
+                                "My umbrella broke. Think I can get by without one for the rest of the season?",
+                                "Will I be able to build a snowman tomorrow?",
+                                "What's the hottest place on the planet?",
+                                "What is the coldest place on the planet?",
+                                "Can you tell me the highest temperature ever recorded in history?",
+                                "What's the temperature like in the Thar Desert?",
+                                "Is it too cold to take the dog out for a walk?",
+                                "Is it too hot to leave my dog in the car for a bit?",
+                                "Will we have a scarcity of water this year too?",
+                                "What's the highest amount of rainfall ever recorded ",
+                                "Is it always sunny ",
+                                "I see leaves turning brown. Is it fall yet?",
+                                "I think it's getting warmer. Is spring here yet?",
+                                "I see swallows. Is spring break here already?",
+                                "Am I imagining it or are we having a warmer winter than usual this year?",
+                                "Phew. It's hot. What's the temperature outside?",
+                                "Will it rain enough to cause floods this year?",
+                                "How will the rains be this year?",
+                                "What place has the highest rainfall in the world?",
+                                "There hasn't been much rain this year. Think there'll be a drought this year?",
+                                "Will the sky be clear enough to fly my drone today?",
+                                "Is the weather suitable to go kite flying?",
+                                "Will the sky be clear enough to see the stars tonight?",
+                                "Is it a good night to go stargazing?",
+                                "Is it hot enough to fry an egg on the hood of my car ?",
+                                "Is it gonna be too windy to hang the clothes out to dry?",
+                                "Will it be too windy to go kite flying tomorrow?",
+                                "Will I see a rainbow tomorrow?",
+                                "Is it a good day to go down to the beach?",
+                                "Is it a good day for a hike?",
+                                "Is it a good day for a walk?",
+                                "Is it a good day for a trek?",
+                                "Can today's flight expect turbulence?",
+                                "Is the weather suitable for sailing today?",
+                                "Which way does the wind blow today?",
+                                "How many centimeters of rainfall can we expect today",
+                                "Will we have a white Christmas?"
+                        ],
+                        "responses": [
+                                "Checking Todays weather... "
+                        ],
+                        "context": [
+                                ""
+                        ]
+                }
+        ]
+}
