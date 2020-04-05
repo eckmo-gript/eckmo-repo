@@ -39,3 +39,21 @@ TODO
 TODO
 ## Training data
 TODO
+## Training data
+TODO
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+Contact us :
+
+* *Eckmo's [Slack](https://join.slack.com/t/eckmo/shared_invite/zt-cmmmdt9v-WSEx5Q3i0Lv9z6m9d6xXQA) workspace*
+* *Eckmo's [Discord](https://discord.gg/CFbb3p) channel*
+* *Eckmo's [Email](eckmoapps@gmail.com)*
+
+## Authors
+
+* **Hatim CHERKAOUI** - *Initial work* - [Email](cherkaouihatim@gmail.com) - [Linkedin](https://ma.linkedin.com/in/hatim-cherkaoui)

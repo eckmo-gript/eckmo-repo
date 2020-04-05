@@ -11,13 +11,23 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import environ
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ECKMO_ROOT = os.path.join(BASE_DIR, 'eckmo')
 BACKEND_ROOT = os.path.join(BASE_DIR, 'backend')
 FRONTEND_ROOT = os.path.join(BASE_DIR, 'frontend')
 CHATBOT_ROOT = os.path.join(BACKEND_ROOT, 'chatbot')
+LOG_ROOT = os.path.join(BACKEND_ROOT, 'Logs')
+
+# Environment File
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+env = environ.Env(
+    MOVIEDB_API_KEY=str,
+)
+# DEBUG = env.bool('DEBUG', default=False)
 
 
 # Quick-start development settings - unsuitable for production
@@ -28,9 +38,42 @@ SECRET_KEY = 'wjyvovahy^kmq6%0_*0ehshj&^%j7o_d^og)77n&#wcub_($#5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# API KEYS
+MOVIEDB_API_KEY = env('MOVIEDB_API_KEY')
+
+# LOGGING CUSTOMIZATION
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': '%(levelname)s %(asctime)s %(name)s.%(funcName)s:%(lineno)s- %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard',
+        },
+
+        'file': {
+            'class': 'logging.FileHandler',
+            #  choose file location of your liking
+            'filename': os.path.normpath(os.path.join(LOG_ROOT, 'debug.log')),
+            'formatter': 'standard'
+        },
+    },
+    'loggers': {
+        # django logger
+        '': {
+            # log to console and file handlers
+            'handlers': ['file'],
+            'level': 'INFO'
+        },
+    },
+}
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -76,7 +119,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'eckmo.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -86,7 +128,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -106,7 +147,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -119,7 +159,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

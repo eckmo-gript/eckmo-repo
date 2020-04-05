@@ -26,14 +26,14 @@ class App extends React.Component {
         });
     }
 
-    // Start waiting for a response from Voithos (show typing indicator)
+    // Start waiting for a response from Eckmo (show typing indicator)
     waitForResponse = () => {
         this.setState({
             waitingForResponse: true,
         })
     }
 
-    // Stop waiting for a response from Voithos (hide typing indicator)
+    // Stop waiting for a response from Eckmo (hide typing indicator)
     stopWaitingForResponse = () => {
         this.setState({
             waitingForResponse: false,
@@ -50,7 +50,7 @@ class App extends React.Component {
 
         let introMessage = {
             content: shortIntro,
-            sender: "voithos",
+            sender: "Eckmo",
         }
 
         if (!sessionStorage.getItem('introduced')) {

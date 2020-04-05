@@ -100,6 +100,45 @@
                         ]
                 },
                 {
+                        "tag": "about me",
+                        "patterns": [
+                                "Do you know me?",
+                                "who am I",
+                                "tell me about myself",
+                                "identify me"
+                        ],
+                        "responses": [
+                                "Yes, you are a human",
+                                "You are a dumb person asking a machine about yourself",
+                                "Sorry i can't tell that in public, maybe you are batman"
+                        ],
+                        "context": ""
+                },
+                {
+                        "tag": "eckmo",
+                        "patterns": [
+                                "Who are you?",
+                                "tell me about yourself",
+                                "tell me about you",
+                                "do you know eckmo",
+                                "who is eckmo",
+                                "what is your name",
+                                "are you an AI",
+                                "what are you",
+                                "eckmo",
+                                "more informations about eckmo"
+                        ],
+                        "responses": [
+                                "Hi I'm Eckmo and i'm an AI created for chatting with humans",
+                                "Eckmo here, a very advance chatbot",
+                                "Eckmo, chatbot of future",
+                                "Yes, I'm Eckmo",
+                                "My name is Eckmo",
+                                "You can call me Eckmo"
+                        ],
+                        "context": ""
+                },
+                {
                         "tag": "options",
                         "patterns": [
                                 "How you could help me?",
@@ -109,28 +148,25 @@
                                 "What support is offered"
                         ],
                         "responses": [
-                                "I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies",
-                                "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"
+                                "I can suggest to you many things, such as Movies, books, Quotes, Jokes, Advices, Facts about Pets and more... Try for example 'Eckmo Suggest me a Movie.' "
+
                         ],
                         "context": [
                                 ""
                         ]
                 },
                 {
-                        "tag": "bot_info",
+                        "tag": "Joke",
                         "patterns": [
-                                "How to check Adverse drug reaction?",
-                                "Open adverse drugs module",
-                                "Give me a list of drugs causing adverse behavior",
-                                "List all drugs suitable for patient with adverse reaction",
-                                "Which drugs dont have adverse reaction?"
+                                "tell me a joke?",
+                                "make me laugh",
+                                "tell me a science joke",
+                                "tell me something funny"
                         ],
                         "responses": [
-                                "Navigating to Adverse drug reaction module"
+                                "How do you make holy water? you boil the hell out of it"
                         ],
-                        "context": [
-                                ""
-                        ]
+                        "context": "Joke"
                 },
                 {
                         "tag": "quote",
@@ -144,88 +180,120 @@
                         "responses": [
                                 "Searching for a quote"
                         ],
-                        "context": [
-                                ""
-                        ]
+                        "context": "Quote"
                 },
                 {
-                        "tag": "weather",
+                        "tag": "CatsFacts",
                         "patterns": [
-                                "Will it be sunny today?",
-                                "Is it raining in Queens?",
-                                "What is the weather like this time of the year?",
-                                "Is it sunny",
-                                "Could we possibly have a hailstorm today?",
-                                "Will we have snow today?",
-                                "Will there be snowfall by tomorrow?",
-                                "How much rainfall have we had today?",
-                                "What is the temperature outside?",
-                                "How hot is it in Bangalore today?",
-                                "Will it be cloudy next Tuesday?",
-                                "Could you tell me what the weather is like right now?",
-                                "Will tomorrow be a balmy day?",
-                                "What will Sunday's weather be like?",
-                                "Is today going to be a wet day?",
-                                "Was yesterday a cloudy day?",
-                                "Will tomorrow be a sunny day?",
-                                "WHat's the weather like ?",
-                                "Should I carry an umbrella today?",
-                                "Is it good day to have a picnic?",
-                                "Should I send the kids out to play this evening?",
-                                "It's so hot today. Think it'll rain?",
-                                "We're considering an outdoor wedding. Any chances of rain?",
-                                "Shall we hold the lunch outdoors, or would it be too hot out?",
-                                "Should I wear a sweater to school today?",
-                                "Is it warm enough to go out for a walk?",
-                                "Is it too cold to go out for a swim?",
-                                "Is it cold enough to go ice skating at the lake yet?",
-                                "What is the temperature ?",
-                                "Will there be a storm tonight",
-                                "Dark clouds loom. Will it rain today?",
-                                "My umbrella broke. Think I can get by without one for the rest of the season?",
-                                "Will I be able to build a snowman tomorrow?",
-                                "What's the hottest place on the planet?",
-                                "What is the coldest place on the planet?",
-                                "Can you tell me the highest temperature ever recorded in history?",
-                                "What's the temperature like in the Thar Desert?",
-                                "Is it too cold to take the dog out for a walk?",
-                                "Is it too hot to leave my dog in the car for a bit?",
-                                "Will we have a scarcity of water this year too?",
-                                "What's the highest amount of rainfall ever recorded ",
-                                "Is it always sunny ",
-                                "I see leaves turning brown. Is it fall yet?",
-                                "I think it's getting warmer. Is spring here yet?",
-                                "I see swallows. Is spring break here already?",
-                                "Am I imagining it or are we having a warmer winter than usual this year?",
-                                "Phew. It's hot. What's the temperature outside?",
-                                "Will it rain enough to cause floods this year?",
-                                "How will the rains be this year?",
-                                "What place has the highest rainfall in the world?",
-                                "There hasn't been much rain this year. Think there'll be a drought this year?",
-                                "Will the sky be clear enough to fly my drone today?",
-                                "Is the weather suitable to go kite flying?",
-                                "Will the sky be clear enough to see the stars tonight?",
-                                "Is it a good night to go stargazing?",
-                                "Is it hot enough to fry an egg on the hood of my car ?",
-                                "Is it gonna be too windy to hang the clothes out to dry?",
-                                "Will it be too windy to go kite flying tomorrow?",
-                                "Will I see a rainbow tomorrow?",
-                                "Is it a good day to go down to the beach?",
-                                "Is it a good day for a hike?",
-                                "Is it a good day for a walk?",
-                                "Is it a good day for a trek?",
-                                "Can today's flight expect turbulence?",
-                                "Is the weather suitable for sailing today?",
-                                "Which way does the wind blow today?",
-                                "How many centimeters of rainfall can we expect today",
-                                "Will we have a white Christmas?"
+                                "what do you know abouts cats?",
+                                "tell me a cats fact?",
+                                "cat facts",
+                                "something about cat",
+                                "fact about cats",
+                                "meo",
+                                "meow",
+                                "Pussycat",
+                                "kitties",
+                                "miao",
+                                "you cat to be kitten me right meow",
+                                "kittens fact"
                         ],
                         "responses": [
-                                "Checking Todays weather... "
+                                "Searching for a fact..."
                         ],
-                        "context": [
-                                ""
-                        ]
+                        "context": "CatsFacts"
+
+                },
+                {
+                        "tag": "DogsFacts",
+                        "patterns": [
+                                "what do you know abouts dogs?",
+                                "tell me a dogs fact?",
+                                "dog facts",
+                                "something about dog",
+                                "fact about dogs",
+                                "bark",
+                                "Woof",
+                                "Whof",
+                                "doggo",
+                                "haw haw",
+                                "best man companion",
+                                "puppies",
+                                "puppy"
+                        ],
+                        "responses": [
+                                "Searching for a fact..."
+                        ],
+                        "context": "DogsFacts"
+
+                },
+                {
+                        "tag": "Books",
+                        "patterns": [
+                                "Suggest me a book",
+                                "book suggestion",
+                                "i want to read a book",
+                                "some books to read",
+                                "hand me a book",
+                                "Reading books",
+                                "a good book to read",
+                                "do you have any book to suggest"
+                        ],
+                        "responses": [
+                                "Searching for a book..."
+                        ],
+                        "context": "Books"
+
+                },
+                {
+                        "tag": "Movies",
+                        "patterns": [
+                                "Suggest me a Movie",
+                                "Movie suggestion",
+                                "i want to watch a movie",
+                                "some good movie to watch",
+                                "hand me a movie",
+                                "Watching movies",
+                                "a good film to watch",
+                                "Trending movie to watch",
+                                "I wanna see a movie"
+                        ],
+                        "responses": [
+                                "Searching for a Movie..."
+                        ],
+                        "context": "Movies"
+
+                },
+                {
+                        "tag": "Advice",
+                        "patterns": [
+                                "Give me an advice",
+                                "Advice me",
+                                "Do you have any advice to tell me",
+                                "tell me an advice"
+                        ],
+                        "responses": [
+                                "Searching for an advice..."
+                        ],
+                        "context": "Advice"
+
+                },
+                {
+                        "tag": "Covid19",
+                        "patterns": [
+                                "live updates of corona virus cases in ",
+                                "corona virus cases in ",
+                                "numbers of covid19 cases in",
+                                "covid-19 cases in ",
+                                "covid cases in ",
+                                "How many cases of corona virus in right now",
+                                "How many cases of covid in right now"
+                        ],
+                        "responses": [
+                                "Searching for number of cases..."
+                        ],
+                        "context": "Covid19"
+
                 }
         ]
 }
